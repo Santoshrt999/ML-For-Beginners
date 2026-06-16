@@ -85,7 +85,7 @@ When the answer isn't a number but a **category** — yes/no, benign/malignant,
 | ---- | --------------- |
 | [`logistical_regression.py`](classification/logistical_regression.py) | Why a straight line **fails** on categorical data |
 | [`sigmoid_function.py`](classification/sigmoid_function.py) | The **sigmoid** that squashes any number into `(0, 1)` |
-| [`boundaryline_py`](classification/boundaryline_py) | Drawing the **decision boundary** that separates classes |
+| [`boundaryline.py`](classification/boundaryline.py) | Drawing the **decision boundary** that separates classes |
 
 **The sigmoid function — the star of classification:**
 
