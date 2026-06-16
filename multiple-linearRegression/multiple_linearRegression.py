@@ -163,7 +163,7 @@ for i in range(m):
 fig, (ax1, ax2) = plt.subplots(1, 2, constrained_layout=True, figsize=(12, 4))
 ax1.plot(J_hist)
 ax2.plot(100 + np.arange(len(J_hist[100:])), J_hist[100:])
-ax1.set_title("Cost v Iteration 1st 100 values"); ax2.set_title("Cost vs Iteration (tail)")
+ax1.set_title("Cost v Iteration 1st 100 values");ax2.set_title("Cost vs Iteration (tail)")
 ax1.set_ylabel("cost");  ax2.set_ylabel("cost")
 ax1.set_xlabel("iter step"); ax2.set_xlabel("iter step")
 plt.show()

@@ -78,18 +78,18 @@ print(f"X1 shape is {X.shape[1]}")
 
 
 x = np.arange(0, 20, 1)
-y = x**2
+y = x**2 
 
 # engineer features .
 X = np.c_[x, x**2, x**3]   #<-- added engineered feature
 X_features = ['x','x^2','x^3']
 
-# fig,ax=plt.subplots(1,3, figsize=(12,3), sharey=True)
-# for i in range(len(ax)):
-#     ax[i].scatter(X[:,i],y)#Get all rows and ith column and plot it with y i.e, x**2
-#     ax[i].set_xlabel(X_features[i])
-# ax[0].set_ylabel("y")
-# plt.show()
+fig,ax=plt.subplots(1,3, figsize=(12,3), sharey=True)
+for i in range(len(ax)):
+    ax[i].scatter(X[:,i],y)#Get all rows and ith column and plot it with y i.e, x**2
+    ax[i].set_xlabel(X_features[i])
+ax[0].set_ylabel("y")
+plt.show()
 
 
 #adding z-score to data
